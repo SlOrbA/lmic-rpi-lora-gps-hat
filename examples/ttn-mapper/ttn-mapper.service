@@ -1,0 +1,9 @@
+[Unit]
+Description=TTN Mapper service
+After=gpsd.service
+
+[Service]
+ExecStart=/opt/lora/bin/ttn-mapper
+
+[Install]
+WantedBy=multi-user.target
